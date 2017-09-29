@@ -33,11 +33,11 @@
 % Use mixed case type for the shortened title
 % Ensure shortened title does not cause an overfull hbox LaTeX error
 % See ASPmanual2010.pdf 2.1.4  and ManuscriptInstructions.pdf for more details
-\markboth{Author1, Author2, and Author3}{Short Title}
+\markboth{Rees}{Quality software: what does it mean?}
 
 \begin{document}
 
-\title{ADASS Author Template}
+\title{Quality software: what does it mean?}
 
 % Note the position of the comma between the author name and the 
 % affiliation number.
@@ -47,22 +47,30 @@
 % authors share an affiliation this should be in a single \affil which can then
 % be referenced for several author names.
 % See ManuscriptInstructions.pdf and ASPmanual2010.pdf 3.1.4 for more details
-\author{Sample~Author1,$^1$ Sample~Author2,$^2$ and Sample~Author3$^3$
-\affil{$^1$Institution Name, Institution City, State/Province, Country; \email{AuthorEmail@email.edu}}
-\affil{$^2$Institution Name, Institution City, State/Province, Country}
-\affil{$^3$Institution Name, Institution City, State/Province, Country}}
+\author{Nick Rees,$^1$
+\affil{$^1$SKA Organization, Macclesfield, Cheshire, United Kingdom; 	\email{n.rees@skatelescope.org}}
+}
 
 % This section is for ADS Processing.  There must be one line per author.
-\paperauthor{Sample~Author1}{Author1Email@email.edu}{ORCID_Or_Blank}{Author1 Institution}{Author1 Department}{City}{State/Province}{Postal Code}{Country}
-\paperauthor{Sample~Author2}{Author2Email@email.edu}{ORCID_Or_Blank}{Author2 Institution}{Author2 Department}{City}{State/Province}{Postal Code}{Country}
-\paperauthor{Sample~Author3}{Author3Email@email.edu}{ORCID_Or_Blank}{Author3 Institution}{Author3 Department}{City}{State/Province}{Postal Code}{Country}
+\paperauthor{Nick Rees}{n.rees@skatelesscope.org}{}{SKA Organization}{Computing and Software}{Macclesfield}{Cheshire}{SK11 9DL}{United Kingdom}
 
 \begin{abstract}
-This is the ADASS 2017 author template file.  This is based on the Astronomical Society of the Pacific (ASP) 2014 template, but has been modified to reflect the specific ADASS requirements.
+The SKA is a major international project which will generate transformational science in the realm of metre and centimetre astronomy. It can be described as a “software telescope”, with RF signals being digitized directly and generating aggregated data rates of up to ~1.7 Petabits/sec from the antennas, and intermediate data rates in the signal chain of ~5 Terabits/sec. The telescope is being designed by 10 pre-construction consortia with input from around 250 institutes world-wide and will enter the construction phase in 2019. The consortia are estimating that the computing software and hardware construction costs are both in the €80-90M range. 
+
+Many of these numbers are unprecedented in astronomy and this has led to much soul searching. In 2016 the SKA Organization, which coordinates the design consortia, has used software quality, in all its forms, as a way of rationalizing key design decisions and defining primary project processes. Whilst most of this could be seen as being based on best practices elsewhere in the software industry, it has brought a number of fresh perspectives that have not been actively explored in many astronomy projects. The author will present some of these perspectives and how they, along with project risk, are seen as the primary drivers of the software processes and design.
 \end{abstract}
 
-\section{The Template}
-To fill in this template, make sure that you read and follow the ASPCS Instructions for Authors and Editors available for download online. Further hints and tips for including graphics, tables, citations, and other formatting helps are available there. With this template, you should have received a copy of the specific ADASS manuscript instructions, and you should also read these.
+\section{Introduction}
+
+\section{Background}
+When I look back at the management of large ground-based astronomy projects I feel that a pivotal time was in the late 1980's and early 1990's when the first 8-10m class optical telescopes were built. At that time I remember instruments transitioned from relatively small systems that could be built by a university to large systems that needed significant project and system management. As a result there were a number of failures and consequently we seem to have inherited processes which were best practice at the time.
+
+Since then, I believe that there has been a revolution in software development methods that has led to commercial companies, such as Google, Amazon and the like, being able to consistently build huge software systems that are continually evolving whilst still maintaining a high level of quality. In doing this they have overcome the issues that Conway highlighted in his most famous for his law "". The most interesting thing I think about this paper is not the law, but the statement he makes in the following paragraph, namely: ""
+
+To a certain extent the Astronomical software community has been aware of all of this, but at another level we find we are working in projects that often inherit processes and methods that feel more 1980's than modern day. The SKA Organization is not atypical of in that software was under-represented at various points in the planning cycle and pre-construction has been about working to develop a set of defined deliverables with nominally fixed phase gates. This paper is about how we have tried to overcome this and build a set of software development processes that will deliver the sort of software our customers will love.
+
+\section{Approach to quality}
+
 
 \subsection{The Author Checklist}
 The following checklist should be followed when writing a submission to a conference proceedings to be published by the ASP for ADASS. The references are to sections in the ADASS manuscript instructions.\footnote{Most URLs should be in a footnote like this one.  In this case, you can download the online material from \url{http://www.adass.org}.} 
@@ -88,7 +96,7 @@ The following checklist should be followed when writing a submission to a confer
 \item Copyright forms signed and filled out - don't use electronic signatures. (See Miscellany.)
 \item Author lists follow the correct format: comma separated, with an `and' for the final author. (See Authors and Affiliations.)
 \item The first author of the paper must be the person who presented the paper at the conference. (See Authors and Affiliations.)
-\item No repetition of affiliations - list each organisation once, with multiple e-mail addresses if you really must. (See Authors and Affiliations.)
+\item No repetition of affiliations - list each organization once, with multiple e-mail addresses if you really must. (See Authors and Affiliations.)
 \item Running heads should fit in the same horizontal space as the text does, not pushing the page numbers over to the right. (See LaTeX warnings and errors.)
 \item Run through a spelling checker. (I know that can be tricky with LaTeX.) (See Content and Typesetting.)
 \item Proofread, or have the text proofread, to check for proper English usage. In particular, note that ``allows to'' is not conventional English, and English uses articles (`a',`an',`the') in places where other languages, particularly Eastern European languages, don't have them. (See Content and Typesetting.)
@@ -156,16 +164,6 @@ Here is an itemized list:
 
 \section{Images}
 For some figures, see Figures \ref{ex_fig1}- \ref{ex_fig3}.
-
-\articlefigure{example.eps}{ex_fig1}{Welcome to 1953.}
-% It is possible to reduce the size of a figure among other changes (see the instructions).  Here is an example:
-% \articlefigure[width=.5\textwidth]{example.eps}{ex_fig1_reduced}{Welcome to 1953 a little smaller.}
-
-\articlefiguretwo{example.eps}{example.eps}{ex_fig2}{Now there are two of them.  \emph{Left:} An image from long ago.  \emph{Right:} The same exact thing.}
-% There is a figure command allowing for three figures:
-% \articlefigurethree{example.eps}{example.eps}{example.eps}{ex_fig1_triple}{Now there are three of them.}
-
-\articlefigurefour{example.eps}{example.eps}{example.eps}{example.eps}{ex_fig3}{Now four of them?}
 
 \clearpage % To force this stuff to happen by this point in the text, otherwise these will probably end up after the references.
 
