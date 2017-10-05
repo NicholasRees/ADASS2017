@@ -1,4 +1,4 @@
-all:	Inn-mm.pdf
+all:	I10.pdf
 
 %.pdf: %.dvi
 	dvipdf $*
