@@ -1,10 +1,13 @@
 all:	I10.pdf
 
 %.pdf: %.dvi
-	dvipdf $*
+	dvipdfm $*
 
 %.dvi: %.tex
 	latex $*
+	bibtex $*
+	latex $*
+	latex $*
 
 clean:
-	rm *.dvi *.pdf *.out *.log *.aux
+	rm -f *.bbl *.blg *.dvi *.pdf *.out *.log *.aux
