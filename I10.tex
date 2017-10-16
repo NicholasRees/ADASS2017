@@ -83,8 +83,15 @@ After a few months I decided that my main focus should be on software quality. A
 \item Software must have a license.
 \item If the software comes off the shelf, we have to have it on a register, it has to meet our needs and we have to understand how we will support it during its lifecycle -- which could be the 50 year life of the SKA telescopes.
 \item If the software is developed by the SKA
- the development must follow a process, the 
+\begin{itemize}
+\item The development must follow a process
+\item The process should ensure that the code changes are reviewed and tested.
+\item The dependencies should be understood.
+\item etc.
 \end{itemize}
+\end{itemize}
+
+After some time I realised that this whilst necessary, is not sufficient. At one point I called this``tactical'' quality -- the software will at least pass some basic tests, to emphasise that it is separate from a ``strategic'' quality, which is that the software is 
 
 \section{What is quality?}
 To understand quality, you need to know what it is. If you ask a software user they can easily describe it by the inverse of some of their experiences - words such as inflexible, fragile, overly complicated, difficult to understand, unpredictable and slow spring to mind. More seriously, the International Standards Organisation have written a standard on it where it describes quality in terms of "quality in use" model and a "product quality" model \citep[See][]{iso25010}. 
@@ -93,12 +100,11 @@ To understand quality, you need to know what it is. If you ask a software user t
 
 \articlefigure{ProductQuality.eps}{i10_fig2}{ISO 25010 Product Quality model.}
 
-\articlefiguretwo{QualityInUse.eps}{ProductQuality.eps}{i10_fig3}{ISO 25010 quality models  \emph{Left:} Quality in Use.  \emph{Right:} Product Quality.}
+Looking at these it becomes clear that these qualities are a class of requirements that are often called ``non-functional''. 
 
-\subsubsection{Foundation}
-Fundamental software requirements
-\subsection{Process}
-\subsection{Architectural Quality}
+
+\section{The implications}
+
 
 \section{What did I learn?}
 
